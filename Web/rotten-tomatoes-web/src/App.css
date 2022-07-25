@@ -1,0 +1,323 @@
+:root {
+  --rotten-color: #c50606e5;
+}
+
+/****************** LOGIN / REGISTER ******************/
+
+body {
+  background-image: url("./img/rotten-tomatoes-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(1000px);
+  backdrop-filter: brightness(60%);
+}
+
+.form {
+  background-color: rgb(231, 230, 230);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+  color: white;
+}
+
+.login-font {
+  color: var(--rotten-color);
+}
+
+.login-button {
+  display: grid;
+  align-items: center;
+  padding-top: 10px;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 2rem;
+}
+
+.join-content {
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.join-content a {
+  color: var(--rotten-color);
+  text-decoration: none;
+}
+
+.join-content span {
+  align-items: center;
+}
+
+.login-logo {
+  height: 20rem;
+  padding-top: 8rem;
+  padding-left: 30%;
+}
+
+.register-container {
+  background-color: rgb(215, 178, 178);
+  padding: 1rem;
+  margin: 5rem auto;
+  width: 500px;
+}
+
+.register-logo {
+  width: 20rem;
+  display: block;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+.register-h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.register-form {
+  margin-top: 2rem;
+}
+.register-mb-3 {
+  margin: 0rem 30%;
+}
+.register-input {
+  opacity: 0.6;
+}
+
+.register-label {
+  color: var(--rotten-color);
+}
+
+.register-btn {
+  text-align: right;
+  margin-right: 30%;
+}
+
+/****************** HOME ******************/
+
+.navbar-home {
+  background: rgb(186, 0, 0);
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-home ol {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+.navbar-home ol li {
+  margin: 0 2px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+}
+
+.navbar-home ol li > :is(a, p) {
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-home ol li:hover {
+  color: black;
+}
+
+.navbar-icon {
+  width: 6rem;
+  height: 6rem;
+  filter: drop-shadow(7px 8px 7px #000);
+}
+
+.navbar-icon-container {
+  margin: 0.5rem;
+}
+
+.home-title {
+  background-color: var(--rotten-color);
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.logout-button {
+  font-weight: 600;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/****************** MOVIE CARD ******************/
+
+.movie-card {
+  transition: transform, 0.5s;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: inset 0px -3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card-body::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card:hover .card-body {
+  overflow: auto;
+}
+
+/****************** CONTENT PAGE******************/
+
+.movie-background,
+.profile-background {
+  background-color: white;
+  margin: 1.2rem;
+  display: flex;
+}
+
+.movie-background h1,
+.profile-background h1 {
+  color: black;
+  font-size: 32px;
+  font-weight: 750;
+  padding: 2rem;
+}
+
+.movie-background p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.movie-poster {
+  border-radius: 8px;
+  width: 300px;
+  height: 500px;
+  margin: 3rem;
+  max-width: 100%;
+  flex: 0 0 300px;
+}
+
+.movie-background p span {
+  background-color: var(--rotten-color);
+  padding: 1.1rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 9px;
+}
+
+.content-page-categories {
+  display: flex;
+  gap: 1rem;
+}
+
+.content-page-categories p:last-child:hover {
+  color: var(--rotten-color);
+  opacity: 0.7;
+}
+
+/****************** REVIEWS ******************/
+
+.review-calification span,
+.review-description span {
+  background-color: var(--rotten-color);
+  padding: 0.6rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 9px;
+}
+
+.add-review-container {
+  border: 1px solid rgba(0, 0, 0, 0.258);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.add-review-container p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.review-input-range {
+  display: flex;
+  gap: 10px;
+}
+
+.review-input-range p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.review-input-text input {
+  width: 100%;
+}
+
+.add-review-container button {
+  display: block;
+  padding: 4px 30px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/****************** USER PROFILE ******************/
+.user-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-container {
+  background-color: white;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 550px;
+  border-radius: 11px;
+}
+
+.review-container figure img {
+  border-radius: 100%;
+  width: 100px;
+  height: 130px;
+}
+
+.user-review {
+  border: 0.5rem solid red;
+}
+
+/****************** Not Found Page ******************/
+.not-found-text {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.not-found {
+  font-size: 8rem;
+}
+
+.ops {
+  font-size: 3rem;
+}
